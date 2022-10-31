@@ -149,7 +149,7 @@ const somatorioCargaHorariaTotal = (n) => n += cargaHorariaTotal
 // ---- APROVACAO E REPROVACAO
 
 const notasDeCorte = [...listaNotas]
-const filtrarAprovados = (limiteDeAprovacao) => (lista) => lista.map((x) => x > limiteDeAprovacao ? 'APROVADO' : 'REPROVADO')
+const filtrarAprovados = (limiteDeAprovacao) => (lista) => lista.map((x) => x > limiteDeAprovacao ? 'APPROVED' : 'FAILED')
 const aprovacaoMedia5 = filtrarAprovados(5)
 const resultadoDaAprovacao = aprovacaoMedia5(notasDeCorte)
 console.log(`Aqui, o aluno foi aprovado ou reprovado ${resultadoDaAprovacao}`)
@@ -157,7 +157,7 @@ console.log(`Aqui, o aluno foi aprovado ou reprovado ${resultadoDaAprovacao}`)
 
     attAprovacao(0, resultadoDaAprovacao)
 
-const taAprovado = (y) => y > 5 ? 'APROVADO' : ' REPROVADO'
+const taAprovado = (y) => y > 5 ? 'APPROVED' : 'FAILED'
 
 
 
