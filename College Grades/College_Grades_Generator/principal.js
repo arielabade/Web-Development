@@ -61,7 +61,7 @@ const mostrarDesvioPadrao = Array.from(getDesvioPadrao).map((x) => listaDesvioPa
 const getAprovacao = document.querySelectorAll(".info-aprovacao")
 const getCHTotal = document.querySelectorAll(".info-ch-total")
 const getNotasDesvioPadrao = document.querySelectorAll(".info-desvio-padrao")
-const getMediaPonderada = document.querySelectorAll(".info-media-ponderada")
+
 
 
 const attAprovacao = (n, ref) => {
@@ -98,17 +98,6 @@ const attDesvioPadrao = (n, ref) => {
     }
 }
 
-const attMediaPonderada = (n, ref) => {
-   
-    
-    
-    if (n < ref.length){
-        getNotasDesvioPadrao[n].innerHTML = ref[n]
-        attDesvioPadrao(n+1, ref)
-
-
-    }
-}
 
 
 
@@ -199,13 +188,6 @@ const  multiplicarPesos =  (arr1, arr2) =>  (arr1,arr2).map(x => x * x)
 const pesosMultiplicados = multiplicarPesos([...listaNotas], [...listaCargaHorariaTotal])
 const somadosPesos = (lista) => lista.reduce((acc,x) => acc+x, 0)
 const somatorioDosPesos = somadosPesos(pesosMultiplicados)
-const mediaPonderadaCH = somatorioDosPesos/cargaHorariaTotal
-const resultadoMediaPonderada = mediaPonderadaCH
-console.log(`A média ponderada ${resultadoMediaPonderada}`)
-    
-    attDesvioPadrao(0, resultadoMediaPonderada)
-
-const MediaPonderadaFinal = (n) => n += resultadoMediaPonderada
 
 
 /*
@@ -268,7 +250,7 @@ const montarTr =  (materia) => {
     materiaTr.appendChild(montaTd(taAprovado(parseFloat(materia.nota)), "info-aprovacao")); 
     materiaTr.appendChild(montaTd(somatorioCargaHorariaTotal(parseFloat(materia.CH)), "info-ch-total"));
     materiaTr.appendChild(montaTd(somatorioDesvioPadrao(parseFloat(materia.desvioPadrao)), "info-desvio-padrao"));
-    materiaTr.appendChild(montaTd(MediaPonderadaFinal(parseFloat(materia.mediaPonderada)), "info-media-ponderada"));
+    
     return materiaTr;
 }
 
