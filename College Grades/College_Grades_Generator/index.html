@@ -10,24 +10,24 @@
 
 		<header>
 			<div class="container">
-				<h1 class="titulo">Universidade Federal de Sergipe</h1>
+				<h1 class="titulo">Federal University Of Sergipe</h1>
 			</div>
 		</header>
 		<main>
 			<section class="container">
-				<h2>Histórico na UFS</h2>
+				<h2>School Records</h2>
 				<table>
 					<thead>
 						<tr>
-							<th>Ano / Periodo Letivo</th>
-							<th>Código Disciplinar</th>
-                            <th>Disciplina</th>
-							<th>CH</th>
-							<th>Frequência</th>
-							<th>Nota</th>
-                            <th>Aprovação</th>
-                            <th>CH Total</th>
-                            <th>Desvio Padrão</th>
+							<th>School Year</th>
+							<th>Grade Code</th>
+                            <th>College Subject</th>
+							<th>Hours</th>
+							<th>Frequency</th>
+							<th>Grades</th>
+                            <th>Approvation Status</th>
+                            <th>Total Hours</th>
+                            <th>Standard Devihation</th>
                             <th>Media Ponderada - Carga Horária</th>
                             
 
@@ -41,7 +41,7 @@
 						<tr class="materia" id="adm0002">
 							<td class="info-ano">2017.1</td>
 							<td class="info-codigo">ADM0002</td>
-							<td class="info-disciplina">INTRODUÇÃO A ADMINISTRAÇÃO</td>
+							<td class="info-disciplina">ADMNISTRATION INTRODUCTION</td>
                             <td class="info-ch">60</td>
 							<td class="info-frequencia">83.33%</td>
 							<td class="info-nota">7.1</td>
@@ -59,7 +59,7 @@
 						<tr class="materia">
 							<td class="info-ano">2017.1</td>
 							<td class="info-codigo">COMP0197</td>
-							<td class="info-disciplina">PROGRAMAÇÃO IMPERATIVA</td>
+							<td class="info-disciplina">IMPERATIVE PROGRAMMING</td>
 							<td class="info-ch">90</td>
 							<td class="info-frequencia">84.44%</td>
                             <td class="info-nota">2.2</td>
@@ -74,7 +74,7 @@
 						<tr class="materia">
                             <td class="info-ano">2017.1</td>
 							<td class="info-codigo">MAT0102</td>
-							<td class="info-disciplina">CÁLCULO I</td>
+							<td class="info-disciplina">CALCULUS 1</td>
 							<td class="info-ch">90</td>
 							<td class="info-frequencia">100%</td>
                             <td class="info-nota">9.4</td>
@@ -89,7 +89,7 @@
 						<tr class="materia">
 							<td class="info-ano">2017.2</td>
 							<td class="info-codigo">LETR0429</td>
-							<td class="info-disciplina">INGLÊS INSTRUMENTAL</td>
+							<td class="info-disciplina">INSTRUMENTAL ENGLISH</td>
 							<td class="info-ch">60</td>
 							<td class="info-frequencia">90%</td>
                             <td class="info-nota">9.5</td>
@@ -103,7 +103,7 @@
 						<tr class="materia" >
                             <td class="info-ano">2018.1</td>
 							<td class="info-codigo">ESTAT0011</td>
-							<td class="info-disciplina">ESTATISTICA APLICADA</td>
+							<td class="info-disciplina">APPLIED STATISTICS</td>
 							<td class="info-ch">60</td>
 							<td class="info-frequencia">83.33%</td>
                             <td class="info-nota">9.2</td>
@@ -120,37 +120,36 @@
 			</section>
 			
 			<section class="container">
-				<h2 id="titulo-form">Adicionar novo Componente Curricular</h2>
-				<h3>Para o funcionamento preencha todas as lacunas abaixo:</h3>
-                <p>Obeservação: Não consegui incorporar as alterações sob os dados na tabela, mas as funções montadas aparecem no console.log </p>
-                <p>Para excluir uma linha da tabela basta clicar duas vezes em um item.</p>
+				<h2 id="titulo-form">ADD New Grade Subject</h2>
+				<h3>Fullfill all the blank spaces below for the code work properly</h3>
+                <p>To erase a table line just click twice on any part of the table</p>
                 <form id="form-adiciona">
 					<div class="grupo">
-						<label for="ano">Ano / Periodo:</label>
+						<label for="ano">School Year:</label>
 						<input id="ano" name="ano" type="text" placeholder="Digite o Periodo Letivo" class="campo">
 					</div>
 					<div class="grupo">
-						<label for="codigo">Codigo:</label>
+						<label for="codigo">Grade Code:</label>
 						<input id="codigo" name="codigo" type="text" placeholder="Digite o codigo da sua matéria" class="campo campo-medio">
 					</div>
 					<div class="grupo">
-						<label for="disciplina">Disciplina:</label>
+						<label for="disciplina">School Subject:</label>
 						<input id="disciplina" name="disciplina" type="text" placeholder="Digite o nome da disciplina" class="campo campo-medio">
 					</div>
 					<div class="grupo">
-						<label for="ch">CH:</label>
+						<label for="ch">Total Hours:</label>
 						<input id="ch" type="text" placeholder="Digite a CH" class="campo campo-medio">
 					</div>
                     <div class="grupo">
-						<label for="nota">Nota:</label>
+						<label for="nota">Grades:</label>
 						<input id="nota" name="nota" type="text" placeholder="Digite a nota" class="campo campo-medio">
 					</div>
                     <div class="grupo">
-						<label for="frequencia">Frequência:</label>
+						<label for="frequencia">Frequency:</label>
 						<input id="frequencia" name="frequencia" type="text" placeholder="Digite a frequência" class="campo campo-medio">
 					</div>
 
-					<button id="adicionar-materia" class="botao bto-principal">Adicionar</button>
+					<button id="adicionar-materia" class="botao bto-principal">ADD DATA</button>
                     
 				</form>
 			</section>
