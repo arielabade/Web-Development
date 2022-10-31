@@ -8,7 +8,7 @@
 ## CSS
 
 
-##JavaScript
+## JavaScript
 
 
 ## Why functional programming?
